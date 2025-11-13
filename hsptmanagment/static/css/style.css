@@ -1,0 +1,21 @@
+/* li:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.8); 
+    transition: color 0.3s ease, background-color 0.3s ease;
+} */
+.navbar-nav .nav-item:hover {
+    background-color: rgba(173, 176, 238, 0.2); 
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: rgba(0, 0, 0, 1);  
+    transition: color 0.3s ease;
+}
+.carousel-item img {
+  height: 450px;              /* Fixed height for all images */
+  object-fit: cover;           /* Crops edges to maintain proportion */
+  width: 100%;                 /* Ensures full width */
+  border-radius: 10px;         /* Matches your rounded style */
+}

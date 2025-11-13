@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{%block title%}About {%endblock%}
+
+{% block content %}
+{% load static%}
+<!-- ===== PAGE HEADER ===== -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="fw-bold text-primary">About Us</h1>
+    <p class="lead text-secondary">Delivering trusted healthcare with compassion, excellence, and innovation.</p>
+  </div>
+</section>
+
+<!-- ===== WHO WE ARE ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="{% static 'images/hospital-building.jpg' %}" class="d-block w-100 rounded" alt="Hospital Exterior" 
+             alt="Hospital Building" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold text-primary mb-3">Who We Are</h2>
+        <p>
+          <strong>Aster Mims</strong> is a leading healthcare institution committed to providing exceptional
+          medical services with state-of-the-art technology and highly qualified specialists.
+          Our goal is to ensure every patient receives the best care and attention possible.
+        </p>
+        <p>
+          With decades of experience, our hospital has built a reputation for excellence in medical care, 
+          research, and education. We believe in combining compassion with innovation to create a healthier future.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR MISSION & VALUES ===== -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold text-primary mb-4">Our Mission & Values</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Our Mission</h5>
+            <p class="card-text">
+              To provide world-class healthcare services with a focus on patient safety, 
+              ethical practices, and innovative medical technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Our Vision</h5>
+            <p class="card-text">
+              To be recognized as a global leader in healthcare, known for quality treatment, 
+              cutting-edge research, and compassionate care.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Our Values</h5>
+            <p class="card-text">
+              Compassion, Integrity, Excellence, Innovation, and Teamwork — these are the
+              guiding principles that define our service to every patient.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR FACILITIES ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-primary text-center mb-4">Our Facilities</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush shadow-sm">
+          <li class="list-group-item">✅ 24/7 Emergency and Trauma Center</li>
+          <li class="list-group-item">✅ Advanced Diagnostic Laboratories</li>
+          <li class="list-group-item">✅ Modern Operation Theatres</li>
+          <li class="list-group-item">✅ Intensive Care and Recovery Units</li>
+          <li class="list-group-item">✅ Pharmacy & In-Patient Wards</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="https://img.freepik.com/free-photo/empty-modern-operating-room_23-2148980710.jpg"
+             alt="Hospital Facilities" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Your Health, Our Priority</h2>
+    <p class="lead mb-4">We’re committed to caring for you with skill, empathy, and innovation — every step of the way.</p>
+    <a href="{% url 'booking' %}" class="btn btn-light btn-lg">Book an Appointment</a>
+  </div>
+</section>
+
+{% endblock %}

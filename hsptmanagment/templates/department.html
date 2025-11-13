@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %} Departments {% endblock %}
+
+{% block content %}
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="fw-bold text-primary">Our Departments</h1>
+    <p class="lead text-secondary">
+      Explore our wide range of medical departments designed to provide expert care for every patient need.
+    </p>
+  </div>
+</section>
+
+<!-- ===== DEPARTMENT GRID ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      {% for d in dept %}
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center">
+          <div class="card-body">
+            
+            <h5 class="card-title fw-bold text-primary">{{ d.dep_name }}</h5>
+            <p>{{ d.dep_discription }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Need to Visit a Specialist?</h2>
+    <p class="lead mb-4">Book your appointment online or call our support desk for assistance.</p>
+    <a href="{% url 'booking' %}" class="btn btn-light btn-lg">Book Appointment</a>
+  </div>
+</section>
+
+{% endblock %}
